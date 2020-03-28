@@ -10,6 +10,7 @@ type FormValues = {
   password: string;
   rating: string;
   comment: string;
+  size: string;
 };
 
 export const FormControlStory: React.FC = () => {
@@ -26,12 +27,14 @@ export const FormControlStory: React.FC = () => {
           password: '',
           rating: '',
           comment: '',
+          size: '',
         }}
       >
         <Form>
           <Row>
             <Col md="4">
               <Field
+                size="lg"
                 type="email"
                 name="email"
                 component={FormControl}
@@ -45,6 +48,7 @@ export const FormControlStory: React.FC = () => {
               />
               <br />
               <Field
+                size="sm"
                 type="password"
                 name="password"
                 component={FormControl}
@@ -70,6 +74,8 @@ export const FormControlStory: React.FC = () => {
                 component={FormControl}
                 placeholder="Enter your comment"
               />
+              <br />
+              <Field type="range" name="size" component={FormControl} />
               <br />
               <ButtonToolbar>
                 <Button type="submit" variant="primary">

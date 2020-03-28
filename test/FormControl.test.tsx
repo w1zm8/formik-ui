@@ -118,4 +118,20 @@ describe('FormControl', () => {
     expect(formControl.tagName).toBe('TEXTAREA');
     expect(formControl.textContent).toBe(FIELD_TEST_VALUE);
   });
+  it('renders invalid validation view', () => {
+    const { getByLabelText } = render(
+      <Formik
+        onSubmit={() => {}}
+        initialValues={{
+          [FIELD_TEST_NAME]: FIELD_TEST_VALUE,
+        }}
+      >
+        <Field isInvalid name={FIELD_TEST_NAME} component={FormControl} />
+      </Formik>
+    );
+
+    const formControl = getByLabelText('form-control') as HTMLElement;
+
+    expect(formControl.className).toMatch('is-invalid');
+  });
 });
