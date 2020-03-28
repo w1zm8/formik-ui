@@ -1,0 +1,7 @@
+export const FIELD_TEST_NAME = 'test';
+export const FIELD_TEST_VALUE = '123';
+export const FIELD_TEST_TYPE_EMAIL = 'email';
+export const FIELD_TEST_ID = 'testId';
+export const FIELD_TEST_CLASS_NAME = 'test-class';
+export const FIELD_TEST_PLACEHOLDER = 'Enter the value';
+export const FIELD_TEST_SIZE_SM = 'sm';

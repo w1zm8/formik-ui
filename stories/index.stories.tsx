@@ -1,9 +1,11 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { TextFieldStory } from './TextField.stories';
+import { FormGroupStory } from './FormGroup.stories';
+import { FormControlStory } from './FormControl.stories';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   title: 'Formik Bootstrap',
 };
 
-export { TextFieldStory };
+export { FormControlStory };
+export { FormGroupStory };
