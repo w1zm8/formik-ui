@@ -23,7 +23,12 @@ export const FormCheckStory: React.FC = () => {
         <Form>
           <Row>
             <Col md="5">
-              <Field label="Enabled" name="enabled" component={FormCheck} />
+              <Field
+                label="Enabled"
+                name="enabled"
+                id="enabled"
+                component={FormCheck}
+              />
               <Button type="submit">Submit</Button>
             </Col>
           </Row>

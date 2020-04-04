@@ -1,4 +1,6 @@
 {
+  "extends": "../../tsconfig.json",
+  "include": ["src", "types", "test"],
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
@@ -21,7 +23,8 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
-      "formik-bootstrap": ["./packages/formik-bootstrap/src"]
+      "@": ["./"],
+      "*": ["src/*", "node_modules/*"]
     },
     "jsx": "react",
     "esModuleInterop": true
