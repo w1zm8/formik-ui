@@ -4,8 +4,7 @@ import { FieldProps } from 'formik';
 import { FormControlExtendedProps } from './types';
 import { getFieldFormControlProps } from './utils';
 import { FormControlFeedback } from './FormControlFeedback';
-
-export const FORM_CONTROL_TEST_ID = 'form-control';
+import { FORM_CONTROL_TEST_ID } from './constants';
 
 export type Props = FieldProps & FormControlProps & FormControlExtendedProps;
 

@@ -11,6 +11,7 @@
     "build": "lerna run build",
     "prepublish": "lerna run prepublish",
     "dev": "lerna run start --stream --parallel",
-    "new-version": "lerna version --conventional-commits --yes"
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
   }
 }

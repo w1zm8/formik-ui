@@ -3,13 +3,13 @@ import { Formik, Field } from 'formik';
 import { Col } from 'react-bootstrap';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import { FormGroup } from '../src';
 import {
-  FormGroup,
   FORM_GROUP_TEST_ID,
   FORM_LABEL_TEST_ID,
   FORM_GROUP_FEEDBACK_TEST_ID,
   FORM_CONTROL_TEST_ID,
-} from '../src';
+} from '../src/constants';
 import {
   FIELD_TEST_LABEL_TEXT,
   FIELD_TEST_ERROR_TEXT,

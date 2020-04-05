@@ -1,8 +1,7 @@
 import React from 'react';
 import { FormControl } from 'react-bootstrap';
 import { ErrorMessageProps } from 'formik';
-
-export const FORM_FEEDBACK_TEST_ID = 'form-control-feedback';
+import { FORM_FEEDBACK_TEST_ID } from './constants';
 
 type Props = ErrorMessageProps;
 

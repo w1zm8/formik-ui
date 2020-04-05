@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Formik, Field, Form } from 'formik';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { FormCheck, FORM_CHECK_TEST_ID } from '../src';
+import { FormCheck } from '../src';
+import { FORM_CHECK_TEST_ID } from '../src/constants';
 import {
   FIELD_TEST_LABEL_TEXT,
   FIELD_TEST_TITLE,

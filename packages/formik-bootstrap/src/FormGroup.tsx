@@ -3,10 +3,11 @@ import { Form } from 'react-bootstrap';
 import { Props as FormControlProps, FormControl } from './FormControl';
 import { getFieldErrorProps, getFieldFormFeedbackType } from './utils';
 import { FormControlTag } from 'types';
-
-export const FORM_GROUP_TEST_ID = 'form-group';
-export const FORM_LABEL_TEST_ID = 'form-label';
-export const FORM_GROUP_FEEDBACK_TEST_ID = 'form-feedback';
+import {
+  FORM_GROUP_TEST_ID,
+  FORM_LABEL_TEST_ID,
+  FORM_GROUP_FEEDBACK_TEST_ID,
+} from './constants';
 
 export type Props = FormControlProps & {
   label?: string;
