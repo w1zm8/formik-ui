@@ -10,6 +10,7 @@
     "test": "lerna run test",
     "build": "lerna run build",
     "prepublish": "lerna run prepublish",
-    "dev": "lerna run start --stream --parallel"
+    "dev": "lerna run start --stream --parallel",
+    "new-version": "lerna version --conventional-commits --yes"
   }
 }
