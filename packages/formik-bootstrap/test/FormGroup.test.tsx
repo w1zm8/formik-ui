@@ -7,7 +7,7 @@ import {
   FormGroup,
   FORM_GROUP_TEST_ID,
   FORM_LABEL_TEST_ID,
-  FORM_FEEDBACK_TEST_ID,
+  FORM_GROUP_FEEDBACK_TEST_ID,
   FORM_CONTROL_TEST_ID,
 } from '../src';
 import {
@@ -61,7 +61,7 @@ describe('FormGroup', () => {
       </Formik>
     );
 
-    const feedback = getByTestId(FORM_FEEDBACK_TEST_ID);
+    const feedback = getByTestId(FORM_GROUP_FEEDBACK_TEST_ID);
     expect(feedback).toBeTruthy();
     expect(feedback).toHaveClass('invalid-feedback');
     expect(feedback.textContent).toBe(FIELD_TEST_ERROR_TEXT);

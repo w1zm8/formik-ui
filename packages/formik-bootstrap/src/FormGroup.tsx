@@ -6,7 +6,7 @@ import { FormControlTag } from 'types';
 
 export const FORM_GROUP_TEST_ID = 'form-group';
 export const FORM_LABEL_TEST_ID = 'form-label';
-export const FORM_FEEDBACK_TEST_ID = 'form-feedback';
+export const FORM_GROUP_FEEDBACK_TEST_ID = 'form-feedback';
 
 export type Props = FormControlProps & {
   label?: string;
@@ -26,7 +26,7 @@ const FormGroup: React.FC<Props> = ({ label, tag, controlTag, ...props }) => {
       {showError && fieldError && (
         <Form.Control.Feedback
           type={getFieldFormFeedbackType(props)}
-          data-testid={FORM_FEEDBACK_TEST_ID}
+          data-testid={FORM_GROUP_FEEDBACK_TEST_ID}
         >
           {fieldError}
         </Form.Control.Feedback>

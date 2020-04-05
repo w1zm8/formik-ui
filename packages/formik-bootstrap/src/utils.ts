@@ -1,7 +1,4 @@
-import {
-  FormControlProps as ControlProps,
-  // FormCheckProps as CheckProps,
-} from 'react-bootstrap';
+import { FormControlProps as ControlProps } from 'react-bootstrap';
 import { getIn } from 'formik';
 import { Props as FormControlProps } from './FormControl';
 import { Props as FormCheckProps } from './FormCheck';
