@@ -44,9 +44,10 @@
   "author": "kowalevski",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kowalevski/formik-ui"
+    "url": "https://github.com/kowalevski/formik-ui",
+    "directory": "packages/formik-ui-bootstrap"
   },
-  "module": "dist/formik-bootstrap.esm.js",
+  "module": "dist/formik-ui-bootstrap.esm.js",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@storybook/addon-actions": "^5.3.17",
@@ -73,5 +74,5 @@
     "typescript": "^3.8.3",
     "yup": "^0.28.3"
   },
-  "gitHead": "1d8b2206a195d5c8348434f754fe492739205fd2"
+  "gitHead": "d7036c90f0854068c75072f2c28a360923348993"
 }
