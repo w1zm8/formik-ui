@@ -19,5 +19,9 @@
     "formik",
     "react-bootstrap",
     "form"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kowalevski/formik-ui"
+  }
 }
